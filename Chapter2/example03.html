@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>แบบฟอร์มติดต่อ</title>
+</head>
+<body>
+
+  <header>
+    <h1>ติดต่อเรา</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>ส่งข้อความถึงเรา</h2>
+      
+      <form action="/contact" method="get">
+        
+        <!-- ชื่อ-นามสกุล -->
+        <div>
+          <label for="fullname">ชื่อ-นามสกุล *</label>
+          <input type="text" id="fullname" name="fullname" 
+                 required placeholder="ใส่ชื่อเต็ม">
+        </div>
+
+        <!-- อีเมล -->
+        <div>
+          <label for="email">อีเมล *</label>
+          <input type="email" id="email" name="email" 
+                 required placeholder="example@email.com">
+        </div>
+
+        <!-- เบอร์โทร -->
+        <div>
+          <label for="phone">เบอร์โทรศัพท์</label>
+          <input type="tel" id="phone" name="phone" 
+                 pattern="[0-9]{10}" placeholder="0812345678">
+          <small>กรอกเฉพาะตัวเลข 10 หลัก</small>
+        </div>
+
+        <!-- หัวข้อ -->
+        <div>
+          <label for="subject">หัวข้อ *</label>
+          <select id="subject" name="subject" required>
+            <option value="">-- เลือกหัวข้อ --</option>
+            <option value="general">สอบถามทั่วไป</option>
+            <option value="support">ขอความช่วยเหลือ</option>
+            <option value="feedback">แสดงความคิดเห็น</option>
+            <option value="contact">ติดต่อเจ้าหน้าที่</option>
+          </select>
+        </div>
+
+        <!-- ข้อความ -->
+        <div>
+          <label for="message">ข้อความ *</label>
+          <textarea id="message" name="message" rows="5" 
+                    required minlength="10" 
+                    placeholder="เขียนข้อความของนักศึกษาที่นี่..."></textarea>
+        </div>
+
+        <!-- ยินยอมเงื่อนไข -->
+        <div>
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">
+            ฉันยอมรับ <a href="/terms">เงื่อนไขการใช้งาน</a> *
+          </label>
+        </div>
+
+        <!-- ปุ่มส่ง -->
+        <button type="submit">ส่งข้อความ</button>
+        <button type="reset">ล้างข้อมูล</button>
+        
+      </form>
+    </section>
+
+    <aside>
+      <h3>ช่องทางติดต่ออื่นๆ</h3>
+      <address>
+        <p>📧 Email contact@example.com</p>
+        <p>📞 Tel 02-123-4567</p>
+        <p>📍 ที่อยู่ 123 ถนนสุขุมวิท กรุงเทพฯ</p>
+      </address>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Website</p>
+  </footer>
+
+</body>
+</html>

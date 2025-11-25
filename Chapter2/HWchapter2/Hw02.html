@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration Form</title>
+</head>
+
+<body>
+    <h2>แบบฟอร์มลงทะเบียนเข้าร่วมอีเวนต์</h2>
+
+    <form>
+        <!-- ชื่อ-นามสกุล (บังคับกรอก) -->
+        <label>ชื่อ-นามสกุล:</label><br>
+        <input type="text" name="fullname" required><br><br>
+
+        <!-- อีเมล (บังคับ + ตรวจสอบรูปแบบ) -->
+        <label>อีเมล:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <!-- เบอร์โทร (validate เป็นตัวเลข 10 หลัก) -->
+        <label>เบอร์โทร (10 หลัก):</label><br>
+        <input type="text" name="phone" pattern="\d{10}" title="กรุณากรอกเบอร์โทร 10 หลัก" required><br><br>
+
+        <!-- เพศ (radio buttons) -->
+        <p>เพศ:</p>
+        <input type="radio" name="gender" value="ชาย" required> ชาย
+        <input type="radio" name="gender" value="หญิง"> หญิง
+        <input type="radio" name="gender" value="อื่นๆ"> อื่น ๆ <br><br>
+
+        <!-- ช่วงอายุ (dropdown) -->
+        <label>ช่วงอายุ:</label><br>
+        <select name="age" required>
+            <option value="">-- กรุณาเลือก --</option>
+            <option value="18">
+                <18 /option>
+            <option value="18-25">18-25</option>
+            <option value="26-35">26-35</option>
+            <option value=">35">>35</option>
+        </select><br><br>
+
+        <!-- ความสนใจ (checkbox อย่างน้อย 3 ตัวเลือก) -->
+        <p>ความสนใจ (เลือกได้มากกว่า 1 รายการ):</p>
+        <input type="checkbox" name="interest" value="เทคโนโลยี"> เทคโนโลยี
+        <input type="checkbox" name="interest" value="ท่องเที่ยว"> ท่องเที่ยว
+        <input type="checkbox" name="interest" value="กีฬา"> กีฬา
+        <input type="checkbox" name="interest" value="อาหาร"> อาหาร <br><br>
+
+        <!-- ยินยอมเงื่อนไข (checkbox บังคับติ๊ก) -->
+        <label>
+            <input type="checkbox" name="agreement" required>
+            ฉันยินยอมตามเงื่อนไขและข้อตกลง
+        </label><br><br>
+
+        <!-- ปุ่มส่งและล้างข้อมูล -->
+        <button type="submit">ส่งข้อมูล</button>
+        <button type="reset">ล้างข้อมูล</button>
+    </form>
+</body>
+
+</html>

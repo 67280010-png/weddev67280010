@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ทดสอบการเล่นไฟล์</title>
+</head>
+
+<body>
+    <div><!-- รูปแบบพื้นฐาน -->
+        <audio controls>
+            <source src="sweet-life-luxury-chill-438146.mp3" type="audio/mpeg">
+
+            เบราว์เซอร์ของนักศึกษาไม่รองรับการเล่นเสียง
+        </audio>
+    </div>
+
+    <video width="640" height="360" controls>
+        <source src="292827_small.mp4" type="video/mp4">
+
+        เบราว์เซอร์ของนักศึกษาไม่รองรับการเล่นวิดีโอ
+    </video>
+
+    <div><!-- ✅ ดี ให้ Browser เลือกรูปที่เหมาะสม -->
+        <img src="castle-8519077_1280.jpg" <!-- รูปสำรอง -->
+        srcset="image-400.jpg 400w, <!-- รูปขนาด 400px -->
+        image-800.jpg 800w, <!-- รูปขนาด 800px -->
+        image-1200.jpg 1200w" <!-- รูปขนาด 1200px -->
+        sizes="(max-width 600px) 400px, <!-- มือถือใช้ 400px -->
+        (max-width 900px) 800px, <!-- Tablet ใช้ 800px -->
+        1200px" <!-- Desktop ใช้ 1200px -->
+        alt="ภาพตัวอย่าง">
+
+    </div>
+</body>
+
+</html>
