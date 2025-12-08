@@ -1,0 +1,72 @@
+/* การตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+.scroll-test-area {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 2px solid #555;
+}
+
+.content-block {
+    padding: 10px 0;
+}
+
+.filler {
+    height: 100px; /* เพิ่มช่องว่าง */
+    background-color: #f8f8f8;
+    line-height: 100px;
+    text-align: center;
+    margin: 10px 0;
+    border-bottom: 1px dashed #ccc;
+}
+
+/* Sticky Positioning */
+.table-container {
+    background-color: #e6f7ff;
+    padding: 10px;
+    border: 1px solid #00aaff;
+    /* กล่องนี้เป็น Parent ของ Sticky Element */
+}
+
+.sticky-header {
+    position: sticky; /* **Key:** กำหนดให้เป็น Sticky */
+    top: 0; /* **Key:** จะติดอยู่เมื่อขอบบนของกล่องมาชนกับขอบบนของ Viewport */
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    margin: 0 -10px; /* ชดเชย padding ของ table-container */
+    text-align: center;
+    z-index: 10;
+    border-bottom: 3px solid #0056b3;
+}
+
+.car-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.car-table th, .car-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.car-table th {
+    background-color: #f2f2f2;
+}
+
+    

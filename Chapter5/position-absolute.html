@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position: Absolute</title>
+    <link rel="stylesheet" href="absolute.css">
+</head>
+<body>
+
+    <header>
+        <h1>ตำแหน่งรถยนต์: Absolute (อ้างอิง Parent)</h1>
+        <p>รถคันที่ 2 (Absolute) จะอ้างอิงตำแหน่งกับ <strong>Container (Relative)</strong></p>
+    </header>
+
+    <div class="car-container-relative">
+        <h2>ศูนย์กลางการจัดส่ง (Parent: Relative)</h2>
+        
+        <div class="car-box absolute-1">
+            <h3>รถคันที่ 1</h3>
+            <p><strong>ประเภท:</strong> Sedan</p>
+            <p><strong>ตำแหน่ง:</strong> Static</p>
+        </div>
+        
+        <div class="car-box absolute-2">
+            <h3>รถคันที่ 2</h3>
+            <p><strong>ประเภท:</strong> **Prototype**</p>
+            <p><strong>ตำแหน่ง:</strong> Absolute (Top: 0, Right: 0)</p>
+        </div>
+        
+        <div class="car-box absolute-3">
+            <h3>รถคันที่ 3</h3>
+            <p><strong>ประเภท:</strong> Wagon</p>
+            <p><strong>ตำแหน่ง:</strong> Static</p>
+        </div>
+    </div>
+
+    <div class="car-container-static">
+        <h2>ลานจอดรถ (Parent: Static)</h2>
+        <div class="car-box absolute-4">
+            <h4>รถคันที่ 4</h4>
+            <p><strong>ตำแหน่ง:</strong> Absolute (อ้างอิง Body)</p>
+        </div>
+        <p>กล่องนี้จะอ้างอิงตำแหน่งกับ body แทน เพราะ parent (ลานจอดรถ) เป็น static</p>
+    </div>
+
+</body>
+</html>
+

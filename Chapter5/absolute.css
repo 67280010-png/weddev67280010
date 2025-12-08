@@ -1,0 +1,68 @@
+/* การตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+    height: 1000px; /* เพิ่มความสูงเพื่อให้เห็นความแตกต่าง */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+.car-box {
+    width: 200px;
+    height: 120px;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    background-color: #c9e4ff;
+    display: inline-block;
+}
+
+/* Absolute Positioning */
+
+/* Parent Container: กำหนด position: relative เพื่อเป็นจุดอ้างอิง */
+.car-container-relative {
+    position: relative; /* **Key:** องค์ประกอบ Absolute จะอ้างอิงกับกล่องนี้ */
+    border: 2px dashed #0056b3;
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 50px;
+    height: 300px; 
+}
+
+/* กล่องที่มีการจัดตำแหน่ง Absolute */
+.absolute-2 {
+    position: absolute; /* หลุดจาก Document Flow และอ้างอิง Parent */
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 80px;
+    margin: 0; /* ลบ margin เพื่อให้ตำแหน่งชัดเจน */
+    background-color: #ff6347; /* สีส้มอมแดง */
+    color: white;
+    border: 2px solid darkred;
+    display: block; /* Absolute element เป็น block โดยปริยาย */
+}
+
+/* ตัวอย่าง Parent Static: จะอ้างอิงกับ Body แทน */
+.car-container-static {
+    border: 2px dashed #333;
+    padding: 20px;
+    background-color: #f0f0f0;
+    /* position: static; (ค่าเริ่มต้น) */
+    height: 200px;
+}
+
+.absolute-4 {
+    position: absolute;
+    top: 500px; /* จะเริ่มนับจากขอบบนของ Body (หรือองค์ประกอบแรกที่ไม่ใช่ static) */
+    left: 250px; 
+    background-color: #a4a4ff;
+    border: 2px solid purple;
+}
+

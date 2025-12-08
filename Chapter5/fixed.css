@@ -1,0 +1,42 @@
+/* การตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    height: 1500px; /* **Key:** กำหนดความสูงมากๆ เพื่อให้เกิด Scroll */
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #e0e0e0;
+}
+
+.content-area {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.car-info {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+/* Fixed Positioning */
+.car-fixed-box {
+    position: fixed; /* **Key:** ติดอยู่กับ Viewport (หน้าจอ) */
+    bottom: 20px; /* ระยะห่างจากขอบล่างของหน้าจอ */
+    right: 20px; /* ระยะห่างจากขอบขวาของหน้าจอ */
+    width: 150px;
+    padding: 15px;
+    background-color: #ff8c00; /* สีส้ม */
+    color: white;
+    border: 3px solid #cc7000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 1000; /* ให้กล่องนี้อยู่ด้านบนสุด */
+}

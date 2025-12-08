@@ -1,0 +1,46 @@
+/* การตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+.car-container {
+    border: 2px dashed #333;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.car-box {
+    width: 200px;
+    height: 120px;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    background-color: #c9e4ff;
+    display: inline-block;
+    /* เพื่อให้เห็นการเรียงลำดับ */
+}
+
+/* Static Positioning */
+.car-box-static {
+    /* นี่คือค่าเริ่มต้น ถ้าไม่กำหนด position องค์ประกอบทั้งหมดจะเป็น static */
+    position: static;
+}
+
+/* ทดสอบ: กำหนดค่า top/left แต่จะไม่มีผลเพราะ position เป็น static */
+.static-2 {
+    background-color: #a4c9ff;
+    top: 50px;
+    /* ไม่มีผล */
+    left: 100px;
+    /* ไม่มีผล */
+    border: 2px solid red;
+}

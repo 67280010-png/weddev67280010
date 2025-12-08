@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position: Sticky</title>
+    <style>
+        .scroll-box {
+            height: 400px;
+            overflow-y: scroll;
+            border: 2px solid #ccc;
+        }
+
+        .header-row {
+            position: sticky;
+            top: 0;
+            /* ติดที่ขอบบนของ scroll-box */
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .content {
+            padding: 10px;
+        }
+
+        .car-item {
+            border-bottom: 1px dashed #aaa;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sticky Position</h1>
+    <p>เลื่อนกรอบสี่เหลี่ยมด้านล่างเพื่อดูผลลัพธ์ Header จะไม่หายไป</p>
+
+    <div class="scroll-box">
+        <div class="header-row">หัวตาราง: รายชื่อรถยนต์</div>
+        <div class="content">
+            <div class="car-item">01. Ford Ranger</div>
+            <div class="car-item">02. Isuzu D-Max</div>
+            <div class="car-item">03. Toyota Hilux</div>
+            <div class="car-item">04. Mitsubishi Triton</div>
+            <div class="car-item">05. Mazda BT-50</div>
+            <p>... รายการข้อมูลยาวๆ ...</p>
+            <p>... รายการข้อมูลยาวๆ ...</p>
+            <p>... รายการข้อมูลยาวๆ ...</p>
+        </div>
+        <div class="header-row">หัวตาราง: รายชื่อรถยนต์AAAA</div>
+        <div class="content">
+            <div class="car-item">01. Ford Ranger</div>
+            <div class="car-item">02. Isuzu D-Max</div>
+            <div class="car-item">03. Toyota Hilux</div>
+            <div class="car-item">04. Mitsubishi Triton</div>
+            <div class="car-item">05. Mazda BT-50</div>
+            <p>... รายการข้อมูลยาวๆ ...</p>
+            <p>... รายการข้อมูลยาวๆ ...</p>
+            <p>... รายการข้อมูลยาวๆ ...</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

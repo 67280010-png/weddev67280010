@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position: Fixed</title>
+    <style>
+        body { height: 2000px; /* เพิ่มพื้นที่เพื่อให้เลื่อนเมาส์ได้ */ }
+        
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 150px;
+            height: 60px;
+            background-color: orange;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Fixed Position Example</h1>
+    <p>ลอง Scroll เมาส์ลงไปดูด้านล่าง...</p>
+    
+    <div style="margin-top: 100px;">
+        <h2>รายการรถยนต์ขายดี</h2>
+        <ul>
+            <li>BMW M4</li>
+            <li>Audi R8</li>
+            <li>Nissan GT-R</li>
+        </ul>
+    </div>
+
+    <a href="#" class="chat-button">ปรึกษาฝ่ายขาย</a>
+</body>
+</html>

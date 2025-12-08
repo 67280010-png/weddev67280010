@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position: Sticky</title>
+    <link rel="stylesheet" href="sticky.css">
+</head>
+<body>
+
+    <header>
+        <h1>ตำแหน่งรถยนต์: Sticky (ติดเมื่อ Scroll)</h1>
+    </header>
+
+    <p>เลื่อนหน้าจอลงเพื่อดูการทำงานของหัวข้อ "ตารางรุ่นรถยนต์" ที่จะติดอยู่ด้านบน</p>
+
+    <div class="scroll-test-area">
+        <h2>พื้นที่ทดสอบ Scroll</h2>
+
+        <div class="content-block">
+            <h3>ข้อมูลแนะนำรถยนต์ทั่วไป</h3>
+            <p>เลื่อนลงมาเรื่อยๆ จนกว่าจะถึงส่วนหัวข้อตาราง</p>
+            <p class="filler">...</p>
+            <p class="filler">...</p>
+            <p class="filler">...</p>
+        </div>
+        
+        <div class="table-container">
+            
+            <h3 class="sticky-header">ตารางรุ่นรถยนต์ (Position: Sticky)</h3>
+            
+            <table class="car-table">
+                <thead>
+                    <tr>
+                        <th>รุ่น</th>
+                        <th>สี</th>
+                        <th>ราคา (บาท)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sedan S</td>
+                        <td>ขาว</td>
+                        <td>850,000</td>
+                    </tr>
+                    <tr>
+                        <td>SUV C</td>
+                        <td>ดำ</td>
+                        <td>1,250,000</td>
+                    </tr>
+                    <tr>
+                        <td>Hatchback R</td>
+                        <td>แดง</td>
+                        <td>790,000</td>
+                    </tr>
+                    <tr><td>Pickup T</td><td>น้ำเงิน</td><td>980,000</td></tr>
+                    <tr><td>Van V</td><td>เทา</td><td>1,550,000</td></tr>
+                    <tr><td>Sport Z</td><td>เหลือง</td><td>2,500,000</td></tr>
+                    <tr><td>Electric E</td><td>เขียว</td><td>1,800,000</td></tr>
+                    <tr><td>Sedan S (Premium)</td><td>ขาว</td><td>1,000,000</td></tr>
+                    <tr><td>SUV C (Pro)</td><td>ดำ</td><td>1,400,000</td></tr>
+                    <tr><td>Hatchback R (Sport)</td><td>แดง</td><td>850,000</td></tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="content-block">
+            <h3>ส่วนสรุปท้ายตาราง</h3>
+            <p>เมื่อเลื่อนหน้าจอเลยส่วนตารางนี้ไป หัวข้อ Sticky ก็จะเลื่อนหายไปด้วย เพราะมันถูกจำกัดอยู่ภายใน Parent (table-container)</p>
+            <p class="filler">...</p>
+            <p class="filler">...</p>
+            <p class="filler">...</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+

@@ -1,0 +1,76 @@
+/* การตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #e0e0e0;
+}
+
+.car-container {
+    border: 2px dashed #333;
+    padding: 15px;
+    background-color: #fff;
+    height: 200px; /* กำหนดความสูงเพื่อให้เห็นการเลื่อน */
+}
+
+.car-box {
+    width: 200px;
+    height: 120px;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    background-color: #c9e4ff;
+    display: inline-block;
+}
+
+/* Relative Positioning */
+.relative-1, .relative-3 {
+    position: relative;
+    background-color: #c9e4ff;
+    z-index: 5;
+}
+
+/* กล่องที่มีการเลื่อนตำแหน่ง */
+.relative-2 {
+    position: relative; /* กำหนดให้เป็น Relative */
+    top: 30px; /* เลื่อนลงมา 30px จากตำแหน่งเดิม */
+    left: 50px; /* เลื่อนไปทางขวา 50px จากตำแหน่งเดิม */
+    background-color: #ffc9a4;
+    border: 2px solid orange;
+    z-index: 1; /* ให้รถคันนี้อยู่ด้านบน */
+}
+
+/* Slider Example */
+.slider-example {
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #0056b3;
+    background-color: #e9f7ff;
+}
+
+.car-slider-base {
+    width: 500px;
+    height: 150px;
+    border: 1px dashed #0056b3;
+    margin-top: 15px;
+}
+
+.car-slider {
+    position: relative; /* ต้องเป็น Relative ถึงจะเลื่อนได้ */
+    background-color: #007bff;
+    color: white;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+    line-height: 1.2;
+    padding: 10px;
+    margin: 0;
+    left: 50px; /* ค่าเริ่มต้น */
+}
+
