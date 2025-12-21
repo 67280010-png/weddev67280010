@@ -1,36 +1,44 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
-    <meta charset="UTF-8">
-    <title>ลอยกระทงสาย | หน้าแรก</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <title>ลอยกระทงสาย | หน้าแรก</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+<body>
+
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
   <div class="container">
-    <a class="navbar-brand" href="index.html">
+
+    <!-- โลโก้ -->
+    <a class="navbar-brand fw-bold" href="index.html">
       🪷 ลอยกระทงสาย
     </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <!-- ปุ่มสามขีด -->
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- เมนู -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
 
         <li class="nav-item">
-          <a class="nav-link nav-home" href="index.html">หน้าแรก</a>
+          <a class="nav-link active" href="index.html">หน้าแรก</a>
         </li>
 
         <li class="nav-item">
@@ -48,8 +56,9 @@
         <li class="nav-item">
           <a class="nav-link" href="locations.html">สถานที่จัดงาน</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link active" href="elements.html">องค์ประกอบลอยกระทงสาย</a>
+
+        <li class="nav-item">
+          <a class="nav-link" href="elements.html">องค์ประกอบลอยกระทงสาย</a>
         </li>
 
       </ul>
@@ -57,25 +66,21 @@
   </div>
 </nav>
 
-
-  
-    <header class="hero">
+<!-- ===== Hero ===== -->
 <section class="hero">
   <div class="hero-text">
     <h1>ลอยกระทงสาย</h1>
     <p>ประเพณีงดงามแห่งสายน้ำ</p>
   </div>
 </section>
-    </header>
 
+<!-- ===== Footer ===== -->
+<footer class="footer text-center">
+  <p>© 2025 ประเพณีลอยกระทงสาย | รหัสนักศึกษา 67280010</p>
+</footer>
 
-
-    <footer class="footer text-center">
-        <p>© 2025 ประเพณีลอยกระทงสาย | รหัสนักศึกษา 67280010</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
 <div class="floating-lights"></div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

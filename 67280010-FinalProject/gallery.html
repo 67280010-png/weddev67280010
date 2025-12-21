@@ -1,41 +1,101 @@
 <!DOCTYPE html>
 <html lang="th">
-
 <head>
   <meta charset="UTF-8">
-  <title>แกลเลอรี</title>
+  <title>แกลเลอรี | ลอยกระทงสาย</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
+<!-- ===== Navbar ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+  <div class="container">
 
-      <a class="navbar-brand" href="index.html">ลอยกระทงสาย</a>
+    <a class="navbar-brand fw-bold" href="index.html">🪷 ลอยกระทงสาย</a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">หน้าแรก</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="history.html">ประวัติ</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="how-to-make.html">ขั้นตอนการทำ</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="gallery.html">แกลเลอรี</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="locations.html">สถานที่จัดงาน</a>
+        </li>
+
+      </ul>
     </div>
-  </nav>
-<section class="gallery-section">
-  <h2 class="section-title">แกลเลอรี</h2>
+  </div>
+</nav>
+
+<!-- ===== Gallery ===== -->
+<section class="gallery-section container mt-5 pt-5">
+  <h2 class="section-title text-center mb-5">แกลเลอรีลอยกระทงสาย</h2>
 
   <div class="gallery-grid">
-    <img src="images/ele_4.webp" alt="">
-    <img src="images/ele_6.webp" alt="">
-    <img src="images/บรรยากาศ.webp" alt="">
-    <img src="images/ele_3.jpg" alt="">
-    <img src="images/ele_2.jpg" alt="">
-    <img src="images/ele_8.jpg" alt="">
+
+    <a href="images/ele_4.webp" class="lightbox">
+      <img src="images/ele_4.webp" alt="บรรยากาศลอยกระทงสาย">
+    </a>
+
+    <a href="images/ele_6.webp" class="lightbox">
+      <img src="images/ele_6.webp" alt="แสงกระทงบนสายน้ำ">
+    </a>
+
+    <a href="images/บรรยากาศ.webp" class="lightbox">
+      <img src="images/บรรยากาศ.webp" alt="บรรยากาศงานยามค่ำคืน">
+    </a>
+
+    <a href="images/ele_3.jpg" class="lightbox">
+      <img src="images/ele_3.jpg" alt="กระทงกะลามะพร้าว">
+    </a>
+
+    <a href="images/ele_2.jpg" class="lightbox">
+      <img src="images/ele_2.jpg" alt="กระทงเรียงเป็นสาย">
+    </a>
+
+    <a href="images/ele_8.jpg" class="lightbox">
+      <img src="images/ele_8.jpg" alt="แสงไฟลอยน้ำ">
+    </a>
+
   </div>
 </section>
 
- 
-  <footer class="footer text-center">
-    <p>© 2025 ประเพณีลอยกระทงสาย</p>
-  </footer>
+<footer class="footer text-center mt-5">
+  <p>© 2025 ประเพณีลอยกระทงสาย</p>
+</footer>
 
-</body>
 <div class="floating-lights"></div>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

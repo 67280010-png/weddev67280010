@@ -3,34 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <title>สถานที่ลอยกระทงสาย</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- CSS หลัก -->
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
 <!-- ===== Navbar ===== -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
   <div class="container">
-  
-    <a class="navbar-brand" href="index.html">ลอยกระทงสาย</a>
+
+    <a class="navbar-brand fw-bold" href="index.html">🪷 ลอยกระทงสาย</a>
+
+    <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">หน้าแรก</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="history.html">ประวัติ</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="how-to-make.html">ขั้นตอนการทำ</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="gallery.html">แกลเลอรี</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="locations.html">สถานที่จัดงาน</a>
+        </li>
+
+      </ul>
+    </div>
   </div>
 </nav>
 
 <!-- ===== Content ===== -->
 <section class="container content-section mt-5 pt-5">
-  <h2 class="text-center mb-4">สถานที่ลอยกระทงสาย</h2>
+  <h2 class="text-center mb-5">สถานที่ลอยกระทงสาย</h2>
 
   <div class="row g-4">
 
     <!-- Box 1 -->
     <div class="col-md-4">
-      <div class="card location-card">
-        <img src="images/สพาน.jpg" alt="ริมแม่น้ำ">
+      <div class="card location-card h-100">
+        <img src="images/สพาน.jpg" alt="ริมแม่น้ำปิง">
         <div class="card-body">
           <h5 class="card-title">ริมแม่น้ำปิง</h5>
           <p class="card-text">
@@ -43,8 +76,8 @@
 
     <!-- Box 2 -->
     <div class="col-md-4">
-      <div class="card location-card">
-        <img src="images/สถานที่2.jpg" alt="สะพาน">
+      <div class="card location-card h-100">
+        <img src="images/สถานที่2.jpg" alt="สะพานรัษฎาภิเศก">
         <div class="card-body">
           <h5 class="card-title">สะพานรัษฎาภิเศก</h5>
           <p class="card-text">
@@ -57,8 +90,8 @@
 
     <!-- Box 3 -->
     <div class="col-md-4">
-      <div class="card location-card">
-        <img src="images/สถานที่3.webp"สวนสาธารณะ">
+      <div class="card location-card h-100">
+        <img src="images/สถานที่3.webp" alt="สวนสาธารณะ">
         <div class="card-body">
           <h5 class="card-title">สวนสาธารณะ</h5>
           <p class="card-text">
@@ -72,10 +105,10 @@
   </div>
 </section>
 
-
 <footer class="footer text-center mt-5">
   <p>© 2025 ประเพณีลอยกระทงสาย</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
